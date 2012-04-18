@@ -325,13 +325,13 @@ bool HotImage::onEvents(std::vector<lw::TouchEvent>& events){
 void TaskNeverSeen::vBegin(){
 	lw::App::s().setOrient(lw::App::ORIENTATION_UP);
 
-	//_resHolder.addTexture("hotimg1.png");
-	//_resHolder.addTexture("hotimg2.png");
-	//_resHolder.addTexture("hotimg3.png");
-	//_resHolder.addTexture("hotimg4.png");
-	//_resHolder.addTexture("hotimg5.png");
-	//_resHolder.addTexture("hotimg6.png");
-	//_resHolder.addTexture("hotimg7.png");
+	_resHolder.addTexture("hotimg1.png");
+	_resHolder.addTexture("hotimg2.png");
+	_resHolder.addTexture("hotimg3.png");
+	_resHolder.addTexture("hotimg4.png");
+	_resHolder.addTexture("hotimg5.png");
+	_resHolder.addTexture("hotimg6.png");
+	_resHolder.addTexture("hotimg7.png");
 	_resHolder.addFont("eurostile30.fnt");
 
 	_pTextScore = lw::UIText::create("eurostile30.fnt");
@@ -404,7 +404,7 @@ void TaskNeverSeen::createHotImage(){
 		_pHotImage->addPoint(112.f, 252.f);
 		_pHotImage->addPoint(199.f, 255.f);
 	}else if ( n == 6 ){
-		_pHotImage = new HotImage("hotimg7.png", 0, 0, w, h, x, y, 0.f, 1.f, 0.1f, 0.1f, 0.0001f, 0.0f);
+		_pHotImage = new HotImage("hotimg7.png", 0, 0, w, h, x, y, 0.f, 1.f, 0.01f, 0.01f, 0.f, 0.0015f);
 		_pHotImage->addPoint(155.f, 165.f);
 	}
 }
